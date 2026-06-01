@@ -26,6 +26,13 @@ const userSchema = new mongoose.Schema({
     adress: {
         type: String,
         default: ""
+    },
+    gender: {
+        type: String,
+        default: ""
+    },
+    birthDate: {
+        type: Date,
     }
 }, {
     timestamps: true
