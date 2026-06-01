@@ -6,5 +6,9 @@ const {getProfile, updateProfile} = require("../controllers/user.controllers");
 
 router.get("/profile" , protect, getProfile);
 router.put("/profile", protect, updateProfile);
+// TEST ROUTE
+router.get("/me", protect, (req, res) => {
+  res.json(req.user);
+});
 
 module.exports = router;
